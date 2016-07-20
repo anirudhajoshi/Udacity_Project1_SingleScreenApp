@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="Email">Email: contact@clifton.org</string>
+    <string name="Phone">Phone: 555-555-5555</string>
+</resources>

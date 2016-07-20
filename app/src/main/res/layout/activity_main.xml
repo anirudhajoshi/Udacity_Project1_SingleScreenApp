@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.example.android.singlescreenapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clifton_cropped"
+        android:scaleType="centerInside"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECEFF1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Clifton School"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/textTitle"
+            android:paddingLeft="16dp"
+            />
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:id="@+id/textURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:layout_below="@id/textEmail"
+            android:textSize="14sp"
+            android:text="Website: www.clifton.org" />
+
+        <TextView
+            android:paddingTop="24dp"
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEmail"
+            android:paddingLeft="16dp"
+            android:text="Address:" />
+
+        <TextView
+            android:id="@+id/textAddressLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAddress"
+            android:paddingLeft="16dp"
+            android:text="1234 Anywhere Street NE." />
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:id="@+id/textCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAddressLine"
+            android:text="Atlanta, GA 30030"
+            android:paddingBottom="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECEFF1"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to The Clifton School! Our mission is to provide state of the art childcare and education for children in the Atlanta area. The Clifton School is a full-day, year-round program for children ages 6 weeks to 5 years."
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            />
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Phone"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            />
+
+        <TextView
+            android:id="@+id/textHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textPhone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:text="Hours of operation - 7.00 AM to 6.30 PM" />
+        </LinearLayout>
+
+</RelativeLayout>
